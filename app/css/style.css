@@ -1,0 +1,19 @@
+body {
+    background-image: url("../app/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100%;
+    font-family: 'Open Sans',serif;
+};
+
+
+
+/* #logo {
+    font-family: 'Annie Use Your Telescope';font-size: 22px;
+}; */
+
+  
+
+#logo {
+    font-family: 'Finger Paint';font-size: 22px;
+};

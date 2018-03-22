@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Friend Finder</title>
+
+    <!-- jQuery Library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Materialize Icons -->
+    <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+
+    <!-- Reset stylesheet -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<!--     
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'Caveat';font-size: 22px;
+    }
+    </style> -->
+
+    <link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+    <!-- <style>
+    body {
+        font-family: 'Finger Paint';font-size: 22px;
+    }
+    </style> -->
+
+
+
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 z-depth-5 mainpanel">
+                    <div id="mainpanel-content">
+                        <br>
+                        <hr class="divider purple"></hr>
+                        <h1>
+                            <center>
+                                <strong>Survey Questions</strong>
+                            </center>
+                        </h1>
+                        <div class="divider purple"></div>
+
+                        <h4>
+                            <center>
+                                <strong>About You</strong>
+                            </center>
+                        </h4>
+
+                        <div class="input-field col s6">
+                            <h5>Name (Required)</h5>
+                            <i class="material-icons prefix">person_add</i>
+                            <input type="text" class="validate" placeholder="Your Name" id="userName">
+                        </div>
+
+                        <div class="input-field col s6">
+                            <form action="#">
+                                <h5>Link to Photo Image (Required)</h5>
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>
+                                            <i class="material-icons prefix purple">add_a_photo</i>
+                                        </span>
+                                        <input type="file" single>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload Photo">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Survey Questions -->
+                        <hr class="divider purple">
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 1</strong>
+                            </h5>
+                            <h7>
+                                <strong>You have plans Friday night, but your best friend calls you and is having a crisis - So you,
+                                    without question, cancel your plans so you can be there for them.</strong>
+                            </h7>
+                            <select id="question1">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 2</strong>
+                            </h5>
+                            <h7>
+                                <strong>You value open communication and prefer to address conflict upfront.</strong>
+                            </h7>
+                            <select id="question2">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 3</strong>
+                            </h5>
+                            <h7>
+                                <strong>You would rather stay in and cook dinner as opposed to dressing up and going out to a fancy
+                                    restaurant.</strong>
+                            </h7>
+                            <select id="question3">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 4</strong>
+                            </h5>
+                            <h7>
+                                <strong>You love to travel and want to explore the world.</strong>
+                            </h7>
+                            <select id="question4">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 5</strong>
+                            </h5>
+                            <h7>
+                                <strong>You are dependable and can always be counted on.</strong>
+                            </h7>
+                            <select id="question5">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 6</strong>
+                            </h5>
+                            <h7>
+                                <strong>Your ideal vacation would be a tropical destination.</strong>
+                            </h7>
+                            <select id="question6">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 7</strong>
+                            </h5>
+                            <h7>
+                                <strong>You would rather stay in with a bottle of wine and a movie than go out to a club/bar.</strong>
+                            </h7>
+                            <select id="question7">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 8</strong>
+                            </h5>
+                            <h7>
+                                <strong>You thrive in large groups.</strong>
+                            </h7>
+                            <select id="question8">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 9</strong>
+                            </h5>
+                            <h7>
+                                <strong>You will always give your honest opinion, even if it means hurting someones feelings.</strong>
+                            </h7>
+                            <select id="question9">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <h5>
+                                <strong>Question 10</strong>
+                            </h5>
+                            <h7>
+                                <strong>You are always supportive even if you dont agree.</strong>
+                            </h7>
+                            <select id="question10">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 - Strongly Disagree</option>
+                                <option value="2">2 - Disagree</option>
+                                <option value="3">3 - Neutral</option>
+                                <option value="4">4 - Agree</option>
+                                <option value="5">5 - Strongly Agree</option>
+                            </select>
+                        </div>
+                        
+
+                        <!-- Survey Submit Button -->
+                        <div><center><button class="btn waves-effect waves-light black" type="submit" name="action" id="submitButton">Submit Survey
+                                <i class="material-icons right">send</i>
+                            </button></center><br><hr class="divider purple">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
